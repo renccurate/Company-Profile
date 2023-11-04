@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout - {{ company_info.company_name }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Logout</h1>
+    </header>
+    <section>
+        <h2>Thank you for visiting {{ company_info.company_name }}</h2>
+        <p>You have successfully logged out.</p>
+    </section>
+    <footer>
+        <p>&copy; {{ company_info.company_name }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>

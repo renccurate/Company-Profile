@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ company_info.company_name }} - Company Profile</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ company_info.company_name }}</h1>
+    </header>
+    <section>
+        <h2>Company Information</h2>
+        <ul>
+            <li><strong>Industry:</strong> {{ company_info.industry }}</li>
+            <li><strong>Founded Year:</strong> {{ company_info.founded_year }}</li>
+        </ul>
+    </section>
+    <section>
+        <h2>About Us</h2>
+        <p>{{ company_info.description }}</p>
+    </section>
+</body>
+</html>
